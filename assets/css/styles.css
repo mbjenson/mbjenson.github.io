@@ -1,0 +1,10 @@
+
+.content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 2.4vh;
+    font-family: 'Kanit', sans-serif;
+}
