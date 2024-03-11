@@ -21,3 +21,31 @@
 .skill-title {
     font-size: 150%;
 }
+
+.skills-col {
+    width: 20em;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+    margin: 0 1em 0 1em;
+}
+
+.skills-section {
+    padding: 2em;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.skills-block {
+    margin: 1em 0 1em 0;
+    background-color: rgba(0.1, 0.1, 0.1, 0);
+    border-style: solid;
+    border-width: 0.07em;
+    border-color: rgb(255, 255, 255);
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+
