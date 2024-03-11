@@ -9,10 +9,15 @@
     font-family: Georgia, serif;
 }
 
+.skills {
+    text-align: center;
+    padding: 3em;
+}
+
 .skills-core {
     height: 11vw;
 }
 
-.skills-title {
+.skill-title {
     font-size: 150%;
 }
