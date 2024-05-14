@@ -1,52 +1,246 @@
 
-.content {
-    position: absolute;
-    width: 100%;
+body {
+    /* height: 200vh; */
+    /* background-image:linear-gradient(to right, rgb(226, 121, 87), rgb(249, 226, 100)); */
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(49,189,70,1) 100%); 
+    
+    background-color: rgb(189, 189, 189);
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ===== HEADER ===== */
+
+.header {
+    background-color: black;
+    color: white;
+    height: 8vh;
+    position: fixed;
     left: 0;
     top: 0;
-    color: rgb(255, 255, 255);
-    font-size: 2.4vh;
-    font-family: Georgia, serif;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0 black;
 }
 
+.header-list {
+    font-size: 3vh;
+}
 
-.skills-page {
+.header-list a {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    font-size: auto;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-list span {
+    transition: all 0.15s;
+}
+
+.header-list a::before {
+    content: "";
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.10s;
+    border-bottom-width: 0.3vh;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+    transform: scale(0.1, 1);
+}
+
+.header-list a:hover span {
+    letter-spacing: 0.5px;
+}
+
+.header-list a:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.header-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.header-list a:hover::after {
+    
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+/* ===== FOOTER ===== */
+
+/* .footer {
+    color: white;
+    border-top: solid 1px;
+    border-top-color: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.772);
+    width: 100%;
+    height: 10vh;
+    position: relative;
+    bottom: 0;
+    left: 0;
     text-align: center;
-    padding: 3em;
-    background-image: url('../images/MediterraneanFuture.jpg');
+    padding-top: 2vh;
+} */
+
+/* ===== MAIN ===== */
+
+.main {
+    font-size: 100%;
+    color:white;
+
 }
 
-.skills-core {
-    height: 11vw;
+.main-container {
+    margin-top:12vh;
+    margin-left:18vw;
+    margin-right:18vw;
+    margin-bottom: 12vh;
+    text-align: center;
 }
 
-.skill-title {
-    font-size: 150%;
+.main-header {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5vw;
+    font-weight: bold;
+    text-align: center;
 }
 
-.skills-column {
-    width: 20em;
+/* .main-container h1 {
+    background-image:linear-gradient(to right, red, orange);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 12vh;
+    font-size: 5vw;
+    text-align: center;
+} */
+
+.center-title {
+    
+    font-style:italic;
+    letter-spacing: 0.5vw;
+    font-size: 2vw;
+    /* border-top-style: solid; */
+    /* border-bottom-style: solid; */
+    /* border-top-width: 0.5vh; */
+    border-bottom-width: 0.5vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+
+.info-col {
+    /* width: 25em; */
+    width: 25vw;
+    min-width:min-content;
     display: inline-block;
     vertical-align: top;
-    text-align: left;
-    position: relative;
-    margin: 0 1em 0 1em;
+    text-align: left;   
 }
 
-.skills-section {
-    padding: 2em;
-    position: relative;
-    margin: auto;
-    text-align: center; 
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.skills-block {
-    margin: 1em 0 1em 0;
-    background-color: rgba(109, 109, 109, 0.9);
+.info-box {
+    margin: 0.5vw;
+    padding: 1vw;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgb(201, 201, 201);
+    border-radius: 0.5em;
+    border-width: 2px;
     border-style: solid;
-    border-width: 0.07em;
-    border-color: rgb(255, 255, 255);
-    border-radius: 0.3em;
-    padding: 0.5em;
+    font-size: 2.4vh;
+}
+
+.info-title {
+    margin: 0 1em 0 1em;
+    font-weight: bold;
+    /* font-size: 1vw; */
+    font-size: 1em;
+}
+
+.info-subheader {
+    font-weight: lighter;
+    font-style: italic;
+    color: rgb(175, 175, 175);
+    font-size: 2vh;
+}
+
+.info-contents {
+    line-height: 1.5em;
+    color: rgba(210, 210, 210);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* padding: 2vw; */
+}
+
+.info-contents b {
+    color: white;
+}
+
+.about-me {
+    /* margin: 2vh; */
+    margin: auto;
+    margin-top: 4vh;
+    background-color: rgba( 0, 0 ,9, 0.2);
+    font-style: italic;
+    border-radius: 5px;
+    width: 25vw;
+    height: auto;
+}
+
+/* ===== Projects ===== */
+
+
+.project-box {
+    text-align: left;
+    padding: 0.5vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-width: 0.2em;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 2vw;
+    /* display: inline-block; */
+}
+
+.project-header {
+    font-size: 3vh;
+    /* content:""; */
+    font-weight: bold;
+}
+
+.project-tech {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight:normal;
+    font-size: 2vh;
+    font-style: italic;
+}
+
+.project-info {
+    font-weight: 600;
+    font-weight: 500;
+    margin: 1vw;
+    font-size: 2vh;
 }

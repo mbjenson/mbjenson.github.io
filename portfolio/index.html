@@ -1,0 +1,243 @@
+<!-- landing page for portfolio section -->
+
+<!DOCTYPE html>
+<html lang="en">
+<script src="../assets/scripts/main.js"></script>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <title>Matthew Jenson | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <link rel="stylesheet", href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-list">
+            <a onclick="reveal('experience', ['projects', 'contact'])"><span>Experience</span></a>
+            <a onclick="reveal('projects', ['experience', 'contact'])"><span>Projects</span></a>
+            <a onclick="reveal('contact', ['projects', 'experience'])"><span>Contact</span></a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-container">
+            <div class="main-header">
+                Matthew Jenson
+            </div>
+            <div class="about-me">
+                
+            </div>
+
+            <div id="projects" style="display:none">
+                <div class="center-title">
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="project-box" style="background-image:url(../assets/videos/QuadtreeDarker.gif)">
+                    <div class="project-header">
+                        Quadtree Physics Simulation
+                        
+                        <!-- <div style="color:rgba(255, 255, 255, 0.5); font-size:50%">
+                            <i>C++, SFML, Git</i>
+                        </div> -->
+                        <div style="float:right">
+                            <a href="https://github.com/mbjenson/quadtree-collision-detection" target="_blank">
+                                <img style="width:2vw" src="../assets/images/github-mark-white.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        C++, SFML, Git
+                    </div>
+                    <div class="project-info">
+                        <li>An interactive physics engine that simulates realtime collision physics</li>
+                        <li>Leverages the quadtree data structure to optimize physics by greatly reducing computational overhead</li>
+                    </div>
+                </div>
+
+                <div class="project-box" style="background-image:url(../assets/images/ray-tracer-preview.jpg)">
+                    <div class="project-header">
+                        Ray Tracer
+                        <div style="float:right">
+                            <a href="https://github.com/mbjenson/ray-tracer" target="_blank">
+                                <img style="width:2vw" src="../assets/images/github-mark-white.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        C++
+                    </div>
+                    <div class="project-info">
+                        <li>3D ray tracing scene renderer made entirely with C++</li>
+                        <li>Leverages several advanced lighting and rendering techniques to create lifelike scenes</li>
+                    </div>
+                </div>
+
+                <div class="project-box" style="background-image:url(../assets/videos/CosmicFoxDarker.gif)">
+                    <div class="project-header">
+                        Cosmic Fox
+                        <div style="float:right">
+                            <a href="https://github.com/mbjenson/CosmicFox" target="_blank">
+                                <img style="width:2vw" src="../assets/images/github-mark-white.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        C++, SFML, Git
+                    </div>
+                    <div class="project-info">
+                        <li>Top down 2d action game made from skratch with C++</li>
+                        <li>Uses</li>
+                        <li>Rendering is done using the SFML graphics API</li>
+                        <li>Includes fully custom art, music, and sound design</li>
+                    </div>
+                </div>
+
+                
+
+                <div class="project-box">
+                    <div class="project-header">
+                        2048 AI
+                    </div>
+                    <div class="project-tech">
+                        Python, Pygame
+                    </div>
+                    <div class="project-info">
+                        <li>Robust and capable 2048 AI solver</li>
+                        <li>Capable of easily reaching scores of over 15,000 and scored an average of over 7,000 points over 100 games</li>
+                        <li>Built on advanced concepts of state space search and heuristic development</li>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="experience">
+                <div class="center-title">
+                    <h2>Experience</h2>
+                </div>
+                <div class="info-col">
+                    <div class="info-box">
+                        <div class="info-title">
+                            <h2>Languages</h2>
+                        </div>
+                        <div class="info-contents">
+                            <ul>
+                                <li>C++</li>
+                                <li>C</li>
+                                <li>Python</li>
+                                <li>C#/.NET</li>
+                                <li>Bash/Shell</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Java</li>
+                                <li>Kotlin</li>
+                                <li>OCaml</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-title">
+                            <h2>Education</h2>
+                        </div>
+                        <div class="info-contents">
+                            <ul>
+                                <li><b>Bachelors of Science</b>
+                                    <br>Computer Science (GPA: 3.5)
+                                    <br>University Of Minnesota, Twin Cities
+                                    <br>(expected grad: May 2025)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-title">
+                            <h2>Professional Experience</h2>
+                        </div>
+                        <div class="info-contents">
+                            <ul>
+                                <li><b>4 years of hobbyist software engineering experience</b></li>
+                                <li><b>Lifeworks</b><br><i>Personal Care Attendant</i></li>
+                                <li><b>Fort Wilderness Ministries</b><br><i>Lifeguard</i></li>
+                                <li><b>Target</b><br><i>Fullfilment Associate</i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-col">
+                    <div class="info-box">
+                        <div class="info-title">
+                            <h2>Technologies</h2>
+                        </div>
+                        <div class="info-contents">
+                            <ul>
+                                <li><b>WebDev:</b><br>html, CSS, JavaScript, Boostrap, Django</li>
+                                <li><b>Game Dev:</b><br>Unreal Engine 5, OpenGL, XNA/Monogame, SDL2, SFML, PyGame, Unity</li>
+                                <li><b>Source Control:</b><br>Git, GitHub</li>
+                                <li><b>OS:</b><br>Windows, Linux (Ubuntu, OpenSuse, Debian)</li>
+                                <li><b>Build:</b><br>CMake, MakeFile</li>
+                                <li><b>Web Scraping:</b><br>Beautiful Soup</li>
+                                <li><b>Data Sci:</b><br>NumPy</li>
+                                <li><b>IDE/Editors:</b><br>VS Code, Visual Studio, VIM, Eclipse, Pycharm, Intellij</li>
+                                <li><b>Mobile Development</b><br>Android Studio, Kotlin</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-title">
+                            <h2>Involvement</h2>
+                        </div>
+                        <div class="info-contents">
+                            <ul>
+                                <li><b>Campus Outreach</b><br>Event Coordinator & Student Leader</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <div class="info-title">
+                            <h2>Other Skills</h2>
+                        </div>
+                        <div class="info-contents">
+                            <ul>
+                                <li><b>Music Composition</b><br>Ableton, Reaper</li>
+                                <li><b>Art/Design</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="contact" style="display:none">
+                <div class="center-title">
+                    <h2>Contact</h2>
+                </div>
+                
+                <div class="info-box" style="min-width:fit-content">
+                    
+                    
+                    <div class="info-contents" style="color: rgb(210, 210, 210)">
+                        
+                        email: matthewbjenson[at]gmail[dot]com
+                        <div class="info-subheader">
+                            *please email me for any futher information regarding myself*
+                        </div>
+                        <br>
+                        Employment Inquiries:
+                        <div class="info-subheader">
+                            I am currently looking for jobs in software development/engineering, IT, or systems software. I am primarily looking for work that is in the greater Twin Cities area or remote, but I am also open to considering relocation.
+                            Please contact me with any inquiries at the email below.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
