@@ -1,6 +1,7 @@
 
 body {
-    height: 200vh;
+    /* height: 200vh; */
+    height: fit-content;
     /* background-image:linear-gradient(to right, rgb(226, 121, 87), rgb(249, 226, 100)); */
     background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(49,189,70,1) 100%); 
     
@@ -107,7 +108,8 @@ body {
 }
 
 .main-container {
-    margin-top:12vh;
+    /* margin-top:12vh; */
+    margin-top: 12vmin;
     margin-left:15vw;
     margin-right:15vw;
     margin-bottom: 12vh;
@@ -121,28 +123,18 @@ body {
     text-align: center;
 }
 
-/* .main-container h1 {
-    background-image:linear-gradient(to right, red, orange);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 12vh;
-    font-size: 5vw;
-    text-align: center;
-} */
 
 .center-title {
     font-style:italic;
     letter-spacing: 0.5vw;
-    /* font-size: 2vw; */
-    font-size: 2vmin;
+    font-size: 2vmax;
     border-bottom-width: 0.5vh;
     text-align: center;
     color: rgb(255, 255, 255);
 }
 
 
-
 .info-col {
-    
     max-width: 30vw;
     min-width: 20vw;
     display: inline-block;
@@ -152,8 +144,8 @@ body {
 
 .info-box {
     margin: 0.5vw;
-    padding: 1vmin;
-    /* padding: 1vw; */
+    
+    padding: 1vw;
     padding-right: 0.5em;
     color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.2);
@@ -185,9 +177,15 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.info-contents ul {
+    padding-left: 5vmin;
+}
+
 .info-contents b {
     color: white;
 }
+
+
 
 .about-me {
     text-align: left;
@@ -197,7 +195,7 @@ body {
     background-color: rgba( 0, 0 ,9, 0.2);
     /* font-style: italic; */
     border-radius: 5px;
-    width: 40vw;
+    width: 55vw;
     padding: 1vw;
     height: auto;
 }
@@ -227,6 +225,10 @@ body {
     font-weight: bold;
 }
 
+.project-header img {
+    width: 2vmax;
+}
+
 .project-tech {
     color: rgba(255, 255, 255, 0.5);
     font-weight:normal;
@@ -235,7 +237,8 @@ body {
 }
 
 .project-info {
+    padding-left: 1vmin;
     font-weight: 500;
     margin: 1vw;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
 }
