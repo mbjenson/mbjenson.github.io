@@ -13,22 +13,69 @@
     <link rel="stylesheet", href="/assets/css/styles.css">
 
 </head>
+
+
+<!-- TODO: make only one bar appear under heder list elements -->
 <body>
+
     <div class="header">
         <div class="header-list">
-            <a onclick="reveal('experience', ['projects', 'contact'])"><span>Experience</span></a>
-            <a onclick="reveal('projects', ['experience', 'contact'])"><span>Projects</span></a>
-            <a onclick="reveal('contact', ['projects', 'experience'])"><span>About Me</span></a>
+            <a id="home-button" class="active" onclick="
+                reveal('home', ['projects', 'experience']) 
+                makeActive('home-button', ['projects-button', 'experience-button'])">
+                <span>Home</span></a>
+            <a id="experience-button" onclick="
+                reveal('experience', ['projects', 'home'])
+                makeActive('experience-button', ['home-button', 'projects-button'])">
+                <span>Experience</span></a>
+            <a id="projects-button" onclick="
+                reveal('projects', ['experience', 'home'])
+                makeActive('projects-button', ['home-button', 'experience-button'])">
+                <span>Projects</span></a>
         </div>
     </div>
     
     <div class="main css-selector">
         <div class="main-container">
             <div class="main-header">
-                Matthew Jenson
+                <a style="cursor:pointer;" onclick="
+                    reveal('home', ['experience', 'projects'])
+                    makeActive('home-button', ['projects-button', 'experience-button'])">
+                    <span>Matthew Jenson</span></a>
+                <!-- Matthew Jenson -->
             </div>
            
-            
+            <div id="home">
+                <div class="main-links">
+                    <a href="https://www.linkedin.com/in/matthew-b-jenson/" target="_blank">
+                        <img src="../assets/images/linkedin-logo.png">
+                    </a>
+                    <a href="https://github.com/mbjenson" target="_blank">
+                        <img src="../assets/images/github-mark-white.png">
+                    </a>
+                </div>
+                <div class="center-title">
+                    <h2>projects</h2>
+                </div>
+                <div class="center-title">
+                    <h2>experience</h2>
+                </div>
+                <div class="center-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-me">
+                    I am an avid software developer, creative hobbyist, and university student, 
+                    currently pursuing a bachelors of science in computer science at the 
+                    University of Minnesota.
+                    <br><br>
+                    I am a skilled programmer with 4+ years of intensive academic and 
+                    self-taught experience. Outside of school, I have spent time working 
+                    on projects involving AI, game dev, web dev, computer graphics, audio 
+                    engineering, physics engines, and more. My interests extend beyond
+                    these listed and I am always seeking new ways to develop myself as
+                    a software developer, problem solver, and leader.
+                </div>
+            </div>
 
             <div id="projects" style="display:none">
                 <div class="center-title">
@@ -105,7 +152,7 @@
                 </div>
             </div>
             
-            <div id="experience">
+            <div id="experience" style="display:none">
                 <div class="center-title">
                     <h2>Experience</h2>
                 </div>
