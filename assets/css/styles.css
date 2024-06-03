@@ -144,29 +144,34 @@ body {
 }
 
 .section-link {
-    padding: 0.4em;
+    padding: 1em;
+    /* font-weight: 600; */
     /* width: 55vmin; */
-    width: 30vmax;
+    /* width: vmin; */
+    width: 55vmin;
+    max-width: max-content;
+    /* max-width: 60vw; */
+    min-width: 6em;
     text-align: center;
     font-size: 3vmax;
     margin: 0.3em;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 20em 20em;
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     cursor: pointer;
     transition: all 0.2s;
-   
+    transform: skew(0);
 }
 
 .section-link:hover {
     
-    border-radius: 0.1em;
-    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.0em;
+    background-color: rgba(255, 255, 255, 0.9);
     color: black;
     background-position: 75% 75%;
-    transform: scale(1.04, 1.04);
     font-weight: 600;
+    transform: skew(-0.024turn) scale(0.95, 0.95);
 }
 
 /* ===== MAIN ===== */
@@ -220,6 +225,7 @@ body {
     /* width: 3vmax; */
     width:  4vmax;
     min-width: 1.7em;
+    
 }
 
 .section-header {
