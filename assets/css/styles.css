@@ -50,7 +50,6 @@ body {
     color: white;
     height: 8vmin;
     position: fixed;
-    left: 0;
     top: 0;
     left: 0;
     right: 0;
@@ -74,7 +73,6 @@ body {
     position: relative;
     
 }
-
 
 .header-list span {
     transition: all 0.15s;
@@ -135,7 +133,27 @@ body {
     width: 2vmax;
 }
 
+
+/* ===== Home ===== */
+
+.section-link {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 3em;
+    transition-duration: 3s;
+
+}
+
+.section-link a:hover::before {
+    transform: scale(1, 1);
+}
+
+.section-link a:hover::after {
+    transform: scale(0.1, 1.0);
+}
+
 /* ===== MAIN ===== */
+
 
 .main {
     font-size: 100%;
@@ -143,9 +161,9 @@ body {
 }
 
 .main-container {
-    margin-top: 10vmin;
-    margin-left:15vw;
-    margin-right:15vw;
+    margin-top: 12vmin;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-bottom: 12vh;
     text-align: center;
 }
@@ -157,6 +175,7 @@ body {
     text-align: center;
     text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6);
 }
+
 
 .main-links {
     text-align: center;
@@ -170,6 +189,12 @@ body {
 .main-links img {
     margin: 0.5vmax;
     width: 3vmax;
+}
+
+.section-header {
+    font-size: 3em;
+    text-align: center;
+    margin: 3vh;
 }
 
 .center-title {
@@ -232,6 +257,7 @@ body {
     color: white;
 }
 
+
 .about-me {
     text-align: left;
     font-size: 3vmin;
@@ -245,7 +271,6 @@ body {
 }
 
 /* ===== Projects ===== */
-
 
 .project-box {
     text-align: left;
