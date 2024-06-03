@@ -54,17 +54,28 @@
                     </a>
                 </div>
 
-                <div class="section-header">
-                    Projects
+                <div class="section-links">
+                    
+                    <div class="section-link" onclick="
+                    reveal('experience', ['projects', 'home'])
+                    makeActive('experience-button', ['home-button', 'projects-button'])">
+                        Experience
+                    </div>
+
+                    <div class="section-link" onclick="
+                    reveal('projects', ['experience', 'home'])
+                    makeActive('projects-button', ['home-button', 'experience-button'])">
+                        Projects
+                    </div>
                 </div>
-                <div class="section-link">
-                    <a>Projects</a>
-                </div>
-                <div class="section-header">
-                    Experience
-                </div>
+               
                 
-                <div class="section-header">
+
+                
+                
+                
+
+                <div class="section-header" style="margin-bottom:0.2em;">
                     About Me
                 </div>
                 <div class="about-me">
@@ -276,12 +287,12 @@
                 </div>
             </div>
             
-            <div class="info-box" style="min-width:fit-content; margin-top: 10em;">
+            <div class="info-box" style="min-width:fit-content; margin-top: 8em;">
                 
-                <div class="info-title" style="font-size: 1.3em; margin: 0.7em">
+                <div class="info-title" style="font-size: 1.3em; margin: 0.7em;">
                     Contact
                 </div>
-                <div class="info-contents" style="color: rgb(210, 210, 210)">
+                <div class="info-contents" style="color: rgb(210, 210, 210); margin-bottom:1em">
                     email: mbjenson[at]duck[dot]com
                     <div class="info-subheader">
                         *please email me for any futher information regarding myself*

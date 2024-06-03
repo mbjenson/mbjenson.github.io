@@ -31,7 +31,8 @@ body {
     /* background-image: linear-gradient(312deg, rgb(19, 149, 86) 0%, rgb(41, 41, 132) 0%, rgb(117, 37, 29) 100%);  */
 
     /* background-image: linear-gradient(312deg, rgb(19, 149, 86), rgb(61, 61, 173), rgb(169, 51, 40));  */
-    background-image: linear-gradient(312deg, rgb(7, 81, 45), rgb(20, 20, 86), rgb(130, 32, 23)); 
+    background-image: linear-gradient(312deg, rgb(7, 81, 45), rgb(37, 37, 146), rgb(130, 32, 23), rgb(15, 141, 80)); 
+    /* background-image: linear-gradient(312deg, rgb(7, 81, 45), rgb(20, 20, 86), rgb(130, 32, 23));  */
 
     background-size: 350vmax 350vmax;
     animation: MoveBG 45s ease infinite;
@@ -48,11 +49,12 @@ body {
 .header {
     background-color: black;
     color: white;
-    height: 8vmin;
+    height: 10vmin;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +62,8 @@ body {
 }
 
 .header-list {
-    font-size: 3vmin;
+    /* font-size: 3vmin; */
+    font-size: 3.5vmin;
 }
 
 .header-list a {
@@ -90,7 +93,6 @@ body {
     transition: all 0.10s;
     border-bottom-width: 0.3vh;
     border-bottom-style: solid;
-    /* border-bottom-color: rgb(150, 150, 150); */
     border-bottom-color: rgb(255, 255, 255);
     transform: scale(0.1, 1);
 }
@@ -136,24 +138,38 @@ body {
 
 /* ===== Home ===== */
 
+.section-links {
+    text-align: center;
+    display: inline-block;
+}
+
 .section-link {
-    width: 100%;
+    padding: 0.4em;
+    /* width: 55vmin; */
+    width: 30vmax;
+    text-align: center;
+    font-size: 3vmax;
+    margin: 0.3em;
+    color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 3em;
-    transition-duration: 3s;
-
+    background-size: 20em 20em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: all 0.2s;
+   
 }
 
-.section-link a:hover::before {
-    transform: scale(1, 1);
-}
-
-.section-link a:hover::after {
-    transform: scale(0.1, 1.0);
+.section-link:hover {
+    
+    border-radius: 0.1em;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    background-position: 75% 75%;
+    transform: scale(1.04, 1.04);
+    font-weight: 600;
 }
 
 /* ===== MAIN ===== */
-
 
 .main {
     font-size: 100%;
@@ -170,31 +186,49 @@ body {
 
 .main-header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5vw;
+    font-size: 7vmax;
     font-weight: bold;
     text-align: center;
     text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6);
+    transition: all 0.1s;
+    margin-bottom: 0.2em;
+}
+
+.main-header:active {
+    transform: scale(0.98);
 }
 
 
 .main-links {
     text-align: center;
-    margin: 2vh;
+    margin: 2vh; 
+    margin-bottom: 4vmin; 
 }
 
 .main-links a {
     text-decoration: none;
+    
+}
+
+.main-links img:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .main-links img {
+    transition: all 0.2s;
     margin: 0.5vmax;
-    width: 3vmax;
+    /* width: 3vmax; */
+    width:  4vmax;
+    min-width: 1.7em;
 }
 
 .section-header {
-    font-size: 3em;
+    color: rgb(230, 230, 230);
+    font-size: 4vmax;
     text-align: center;
     margin: 3vh;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .center-title {
@@ -223,7 +257,7 @@ body {
     border-radius: 0.5em;
     border-width: 0.15em;
     border-style: solid;
-    box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.32);
     font-size: 2.4vmin;
 }
 
@@ -262,7 +296,7 @@ body {
     text-align: left;
     font-size: 3vmin;
     margin: auto;
-    margin-top: 4vh;
+    margin-top: 0vh;
     background-color: rgba( 0, 0 ,9, 0.2);
     border-radius: 5px;
     width: 55vw;
