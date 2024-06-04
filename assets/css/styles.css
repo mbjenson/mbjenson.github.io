@@ -144,28 +144,40 @@ body {
 }
 
 .section-link {
-    padding: 1em;
-    /* font-weight: 600; */
+    padding: 0.5em;
+    /* padding-right: 15vw; */
+    /* padding-left: 15vw; */
+    padding-right: 10vw;
+    padding-left: 10vw;
+
+    font-weight: 300;
+
     /* width: 55vmin; */
     /* width: vmin; */
-    width: 55vmin;
+    /* width: 55vmin; */
+
+    /* width: 55vw; */
+    /* max-height: ; */
+
     max-width: max-content;
-    /* max-width: 60vw; */
+    /* max-width: 7em; */
     min-width: 6em;
+    min-width: 30vw;
+    /* min-width: 4em; */
     text-align: center;
     font-size: 3vmax;
     margin: 0.3em;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.5);
     background-size: 20em 20em;
-    border-radius: 0.2em;
+    border-radius: 0.1em;
     cursor: pointer;
     transition: all 0.2s;
     transform: skew(0);
+
 }
 
 .section-link:hover {
-    
     border-radius: 0.0em;
     background-color: rgba(255, 255, 255, 0.9);
     color: black;
@@ -263,7 +275,7 @@ body {
     border-radius: 0.5em;
     border-width: 0.15em;
     border-style: solid;
-    box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.32);
+    box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.2);
     font-size: 2.4vmin;
 }
 
