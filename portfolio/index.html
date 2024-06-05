@@ -11,13 +11,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <link rel="stylesheet", href="/assets/css/styles.css">
-
 </head>
 
-
-<!-- TODO: make only one bar appear under heder list elements -->
 <body>
-
     <div class="header">
         <div class="header-list">
             <a id="home-button" class="active" onclick="
@@ -55,26 +51,17 @@
                 </div>
 
                 <div class="section-links">
-                    
                     <div class="section-link" onclick="
                     reveal('experience', ['projects', 'home'])
                     makeActive('experience-button', ['home-button', 'projects-button'])">
                         Experience
                     </div>
-
                     <div class="section-link" onclick="
                     reveal('projects', ['experience', 'home'])
                     makeActive('projects-button', ['home-button', 'experience-button'])">
                         Projects
                     </div>
                 </div>
-               
-                
-
-                
-                
-                
-
                 <div class="section-header" style="margin-bottom:0.2em;">
                     About Me
                 </div>
@@ -93,13 +80,9 @@
             </div>
 
             <div id="projects" style="display:none">
-                <!-- <div class="center-title">
-                    <h2>Projects</h2>
-                </div> -->
                 <div class="section-header">
                     Projects
                 </div>
-
                 <div class="project-box" style="background-image:url(../assets/videos/QuadtreeDarker.gif)">
                     <div class="project-header">
                         Quadtree Physics Simulation
@@ -136,6 +119,21 @@
                     </div>
                 </div>
 
+                <div class="project-box">
+                    <div class="project-header">
+                        2D Data-Driven Game Engine
+                    </div>
+                    <div class="project-tech">
+                        C#, Git, Monogame/XNA
+                    </div>
+                    <div class="project-info">
+                        <li>Designed and developed a 2D game engine from the ground up using C# with the monogame framework</li>
+                        <li>Built on the back of a robust, custom entity component system which utilizes its data-driven design
+                            to allow for flexibility and efficiency
+                        </li>
+                    </div>
+                </div>
+
                 <div class="project-box" style="background-image:url(../assets/videos/CosmicFoxDarker.gif)">
                     <div class="project-header">
                         Cosmic Fox
@@ -155,6 +153,8 @@
                     </div>
                 </div>
 
+                
+
                 <div class="project-box">
                     <div class="project-header">
                         2048 AI
@@ -171,9 +171,6 @@
             </div>
             
             <div id="experience" style="display:none">
-                <!-- <div class="center-title">
-                    <h2>Experience</h2>
-                </div> -->
                 <div class="section-header">
                     Experience
                 </div>
@@ -218,7 +215,7 @@
                         </div>
                         <div class="info-contents">
                             <ul>
-                                <li><b>4 years of hobbyist software engineering experience</b></li>
+                                <li>4+ years of hobbyist software engineering experience</li>
                                 <li><b>Lifeworks</b><br><i>Personal Care Attendant</i></li>
                                 <li><b>Fort Wilderness Ministries</b><br><i>Lifeguard</i></li>
                                 <li><b>Target</b><br><i>Fullfilment Associate</i></li>
@@ -264,12 +261,14 @@
                                 <li><b>Game Dev:</b><br>Unreal Engine 5, OpenGL, XNA/Monogame, SDL2, SFML, PyGame, Unity</li>
                                 <li><b>WebDev:</b><br>html, CSS, JavaScript, Boostrap, Django</li>
                                 <li><b>Source Control:</b><br>Git, GitHub</li>
-                                <li><b>OS:</b><br>Windows, Linux (Ubuntu, OpenSuse, Debian)</li>
+                                <li><b>OS:</b><br>Windows, Linux (Ubuntu, OpenSuse, Arch)</li>
                                 <li><b>Build:</b><br>CMake, MakeFile</li>
+                                <li><b>Container:</b><br>Docker</li>
                                 <li><b>Web Scraping:</b><br>Beautiful Soup</li>
                                 <li><b>Data Sci:</b><br>NumPy</li>
                                 <li><b>IDE/Editors:</b><br>VS Code, Visual Studio, VIM, Eclipse, Pycharm, Intellij</li>
                                 <li><b>Mobile Development</b><br>Android Studio, Kotlin</li>
+                                <li><i>and more...</i></li>
                             </ul>
                         </div>
                     </div>
