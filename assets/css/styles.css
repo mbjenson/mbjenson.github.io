@@ -116,7 +116,6 @@ body {
     height: 100%;
     z-index: 1;
     transition: 0.3s;
-    
 }
 
 .header-list a.active {
@@ -150,7 +149,8 @@ body {
     padding-right: 10vw;
     padding-left: 10vw;
 
-    font-weight: 300;
+    /* font-weight: 500; */
+    font-weight: 400;
 
     /* width: 55vmin; */
     /* width: vmin; */
@@ -172,18 +172,21 @@ body {
     background-size: 20em 20em;
     border-radius: 0.1em;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.15s;
     transform: skew(0);
 
 }
 
 .section-link:hover {
     border-radius: 0.0em;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
     background-position: 75% 75%;
     font-weight: 600;
-    transform: skew(-0.024turn) scale(0.95, 0.95);
+    transform: scale(0.95, 0.95);
+     /* skew(-0.024turn)  */
+    
+
 }
 
 /* ===== MAIN ===== */
@@ -219,20 +222,19 @@ body {
 .main-links {
     text-align: center;
     margin: 2vh; 
-    margin-bottom: 4vmin; 
+    margin-bottom: 4vmin;
 }
 
 .main-links a {
     text-decoration: none;
-    
 }
 
 .main-links img:hover {
-    transform: scale(1.1, 1.1);
+    transform: scale(0.9, 0.9);
 }
 
 .main-links img {
-    transition: all 0.2s;
+    transition: all 0.15s;
     margin: 0.5vmax;
     /* width: 3vmax; */
     width:  4vmax;
