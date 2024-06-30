@@ -50,6 +50,7 @@ body {
 
 .header {
     background-color: black;
+    background-color: rgb(15, 15, 15);
     color: white;
     height: 10vmin;
     position: fixed;
@@ -146,49 +147,33 @@ body {
 
 .section-link {
     padding: 0.5em;
-    /* padding-right: 15vw; */
-    /* padding-left: 15vw; */
     padding-right: 10vw;
     padding-left: 10vw;
-
-    /* font-weight: 500; */
     font-weight: 400;
-
-    /* width: 55vmin; */
-    /* width: vmin; */
-    /* width: 55vmin; */
-
-    /* width: 55vw; */
-    /* max-height: ; */
-
+    letter-spacing: 0.5px;
     max-width: max-content;
-    /* max-width: 7em; */
     min-width: 6em;
     min-width: 30vw;
-    /* min-width: 4em; */
     text-align: center;
     font-size: 3vmax;
     margin: 0.3em;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.4);
     background-size: 20em 20em;
     border-radius: 0.1em;
     cursor: pointer;
     transition: all 0.15s;
     transform: skew(0);
-
 }
 
 .section-link:hover {
-    border-radius: 0.0em;
-    background-color: rgba(255, 255, 255, 0.8);
+    /* border-radius: 0.0em; */
+    /* background-color: rgba(30, 30, 30, 0.5); */
+    background-color: rgba(255, 255, 255, 0.75);
     color: black;
-    background-position: 75% 75%;
+    /* background-position: 75% 75%; */
     font-weight: 600;
-    transform: scale(0.95, 0.95);
-     /* skew(-0.024turn)  */
-    
-
+    transform: scale(0.96, 0.96);
 }
 
 /* ===== MAIN ===== */
