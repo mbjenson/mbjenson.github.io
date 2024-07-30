@@ -59,14 +59,29 @@ body {
     right: 0;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: left;
     align-items: center;
     box-shadow: 0 0 1.2em 0 rgba(0, 0, 0, 0.8);
 }
 
 .header-list {
-    /* font-size: 3vmin; */
     font-size: 3.5vmin;
+    margin: 1em;
+}
+
+.header-name {
+    color: rgb(200, 200, 200);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 0.07em 0.07em 0px rgba(123, 123, 123, 0.6);
+    font-size: 4.3vmin;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-left: 1.5vw;
+    margin-right: 3vw;
+    margin-top: 0.5em;
+    cursor: pointer;
 }
 
 .header-list a {
@@ -77,7 +92,6 @@ body {
     text-decoration: none;
     cursor: pointer;
     position: relative;
-    
 }
 
 .header-list span {
@@ -184,7 +198,7 @@ body {
 }
 
 .main-container {
-    margin-top: 12vmin;
+    margin-top: 15vmin;
     margin-left: 15vw;
     margin-right: 15vw;
     margin-bottom: 12vh;

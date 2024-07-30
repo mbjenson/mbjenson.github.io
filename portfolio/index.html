@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    
+    
     <div class="header">
         <div class="header-list">
             <a id="home-button" class="active" onclick="
@@ -28,17 +30,24 @@
                 reveal('projects', ['experience', 'home'])
                 makeActive('projects-button', ['home-button', 'experience-button'])">
                 <span>Projects</span></a>
+            <div
+                class="header-name" 
+                onclick="
+                    reveal('home', ['experience', 'projects'])
+                    makeActive('home-button', ['projects-button', 'experience-button'])">
+                Matthew Jenson
+            </div>
         </div>
     </div>
     
     <div class="main css-selector">
         <div class="main-container">
-            <div class="main-header">
+            <!-- <div class="main-header">
                 <a style="cursor:pointer;" onclick="
                     reveal('home', ['experience', 'projects'])
                     makeActive('home-button', ['projects-button', 'experience-button'])">
                     <span>Matthew Jenson</span></a>
-            </div>
+            </div> -->
            
             <div id="home">
                 <div class="main-links">
