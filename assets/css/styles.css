@@ -217,9 +217,9 @@ body {
     margin-top: 0.8em;
 }
 
-.main-header:active {
+/* .main-header:active {
     transform: scale(0.98);
-}
+} */
 
 
 .main-links {
