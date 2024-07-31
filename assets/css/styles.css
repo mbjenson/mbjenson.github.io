@@ -76,11 +76,12 @@ body {
     text-shadow: 0.07em 0.07em 0px rgba(123, 123, 123, 0.6);
     font-size: 4.3vmin;
     position: fixed;
+    font-weight: bold;
     top: 0;
     right: 0;
     margin-left: 1.5vw;
     margin-right: 3vw;
-    margin-top: 0.5em;
+    margin-top: 0.55em;
     cursor: pointer;
 }
 
