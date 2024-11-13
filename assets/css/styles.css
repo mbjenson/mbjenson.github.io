@@ -31,9 +31,9 @@ body {
     /* background-image: linear-gradient(312deg, rgb(19, 149, 86) 0%, rgb(41, 41, 132) 0%, rgb(117, 37, 29) 100%);  */
     /* background-image: linear-gradient(312deg, rgb(19, 149, 86), rgb(61, 61, 173), rgb(169, 51, 40));  */
     
-    background-image: linear-gradient(312deg, rgb(1, 117, 102), rgb(37, 37, 146), rgb(130, 32, 23)); 
-    /* background-image: linear-gradient(312deg, rgb(7, 81, 45), rgb(20, 20, 86), rgb(130, 32, 23));  */
-
+    /* background-image: linear-gradient(312deg, rgb(1, 117, 102), rgb(37, 37, 146), rgb(130, 32, 23));  */
+    background-image: linear-gradient(312deg, rgb(130, 32, 23), rgb(1, 117, 102), rgb(37, 37, 146)); 
+    
     
     /* background-size: 350vmax 350vmax; */
     background-size: 400vmax 400vmax;
@@ -71,7 +71,7 @@ body {
 }
 
 .header-name {
-    color: rgb(200, 200, 200);
+    color: rgb(255, 255, 255);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 0.07em 0.07em 0px rgba(123, 123, 123, 0.6);
     font-size: 4.3vmin;
@@ -116,7 +116,7 @@ body {
 }
 
 .header-list a:hover span {
-    letter-spacing: 0.5px;
+    /* letter-spacing: 0.5px; */
 }
 
 
@@ -161,17 +161,17 @@ body {
 }
 
 .section-link {
-    padding: 0.5em;
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding: 0.4em;
+    padding-right: 7vw;
+    padding-left: 7vw;
     font-weight: 400;
     letter-spacing: 0.5px;
     max-width: max-content;
-    min-width: 6em;
+    /* min-width: 6em; */
     min-width: 30vw;
     text-align: center;
     font-size: 3vmax;
-    margin: 0.3em;
+    margin: 0.2em;
     color: rgba(255, 255, 255, 0.9);
     background-color: rgba(0, 0, 0, 0.4);
     background-size: 20em 20em;
@@ -208,7 +208,7 @@ body {
 
 .main-header {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 7vmax;
+    font-size: 6vmax;
     font-weight: bold;
     text-align: center;
     text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6);
@@ -321,8 +321,8 @@ body {
     margin: auto;
     margin-top: 0vh;
     background-color: rgba( 0, 0 ,9, 0.2);
-    border-radius: 5px;
-    width: 55vw;
+    border-radius: 0.1em;
+    width: 42vw;
     padding: 1vw;
     height: auto;
 }
