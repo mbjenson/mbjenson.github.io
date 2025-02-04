@@ -318,12 +318,15 @@ body {
 .about-me {
     text-align: left;
     font-size: 2.7vmin;
+    font-size: 3.5vmin;
     margin: auto;
     margin-top: 0vh;
-    background-color: rgba( 0, 0 ,9, 0.2);
-    border-radius: 0.1em;
+    background-color: rgba( 0, 0 ,9, 0.3);
+    border-radius: 0.2em;
     width: 42vw;
     padding: 1vw;
+    padding-top: 0.3vw;
+    /* padding: 0.5vw; */
     height: auto;
 }
 
