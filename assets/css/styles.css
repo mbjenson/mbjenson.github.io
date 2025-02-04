@@ -71,9 +71,9 @@ body {
 }
 
 .header-name {
-    color: rgb(255, 255, 255);
+    color: rgb(222, 222, 222);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 0.07em 0.07em 0px rgba(123, 123, 123, 0.6);
+    /* text-shadow: 0.07em 0.07em 0px rgba(123, 123, 123, 0.6); */
     font-size: 4.3vmin;
     position: fixed;
     font-weight: bold;
@@ -87,7 +87,7 @@ body {
 
 .header-list a {
     color: rgba(255, 255, 255, 0.8);
-    color: rgb(150, 150, 150);
+    color: rgb(168, 168, 168);
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     text-decoration: none;
@@ -225,7 +225,7 @@ body {
 .main-links {
     text-align: center;
     margin: 2vh; 
-    margin-bottom: 4vmin;
+    margin-bottom: 1vmin;
 }
 
 .main-links a {
@@ -317,15 +317,18 @@ body {
 
 .about-me {
     text-align: left;
-    font-size: 2.7vmin;
-    font-size: 3.5vmin;
+    /* font-size: 2.7vmin; */
+    font-size: 2.8vmin;
     margin: auto;
     margin-top: 0vh;
     background-color: rgba( 0, 0 ,9, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
     border-radius: 0.2em;
+    border-width: 0.1em;
+    border-style: solid;
     width: 42vw;
-    padding: 1vw;
-    padding-top: 0.3vw;
+    padding: 2vw;
+    padding-top: 0.4vw;
     /* padding: 0.5vw; */
     height: auto;
 }
