@@ -29,7 +29,7 @@ body {
     /* background-image:linear-gradient(to right, rgb(226, 121, 87), rgb(249, 226, 100)); */
 
     /* background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9, 9, 121, 1) 0%, rgba(49, 189, 70, 1) 100%);  */
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(25, 25, 124) 0%, rgb(59, 147, 73) 100%); 
+    /* background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(25, 25, 124) 0%, rgb(59, 147, 73) 100%);  */
 
     /* background-image: linear-gradient(312deg, rgba(2,0,36,1) 0%, rgb(26, 26, 64) 0%, rgb(117, 37, 29) 100%);  */
     /* background-image: linear-gradient(312deg, rgb(19, 149, 86) 0%, rgb(41, 41, 132) 0%, rgb(117, 37, 29) 100%);  */
@@ -38,11 +38,15 @@ body {
     /* background-image: linear-gradient(312deg, rgb(1, 117, 102), rgb(37, 37, 146), rgb(130, 32, 23));  */
     /* background-image: linear-gradient(312deg, rgb(130, 32, 23), rgb(1, 117, 102), rgb(37, 37, 146));  */
     
-    
+    margin: 0;
     /* background-size: 350vmax 350vmax; */
-    background-size: 400vmax 400vmax;
+    /* background-size: 400vmax 400vmax; */
+    background-color: rgb(24, 24, 24);
     animation: MoveBG 35s ease infinite;
+    
     /* background-color: rgb(73, 73, 73); */
+
+    /* font-family: "Noto Sans Mono", monospace; */
     font-family: "Geologica", sans-serif;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
@@ -54,9 +58,10 @@ body {
 /* ===== HEADER ===== */
 
 .header {
+    font-family: "Noto Sans Mono", monospace;
     background-color: black;
     background-color: rgb(15, 15, 15);
-    color: white;
+    /* color: white; */
     height: 10vmin;
     position: fixed;
     top: 0;
@@ -67,16 +72,20 @@ body {
     /* justify-content: center; */
     justify-content: left;
     align-items: center;
-    box-shadow: 0 0 1.2em 0 rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.8);
+    /* max-height: 79; */
 }
 
 .header-list {
+    /* align-items: center; */
     font-size: 3.5vmin;
-    margin: 1em;
+    /* margin: 1em; */
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .header-name {
-    color: rgb(222, 222, 222);
+    /* color: rgb(222, 222, 222); */
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* text-shadow: 0.07em 0.07em 0px rgba(123, 123, 123, 0.6); */
     font-size: 4.3vmin;
@@ -84,17 +93,19 @@ body {
     /* font-weight: bold; */
     top: 0;
     right: 0;
-    margin-left: 1.5vw;
+    /* left: 0; */
+    /* margin-left: 1.5vw; */
     margin-right: 3vw;
     margin-top: 0.55em;
     cursor: pointer;
 }
 
 .header-list a {
-    color: rgba(255, 255, 255, 0.8);
-    color: rgb(168, 168, 168);
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
+    font-size: 2.6vmin;
+    /* color: rgba(255, 255, 255, 0.8); */
+    color: rgb(165, 165, 165);
+    /* margin-left: 1.0vw; */
+    margin-right: 1.0vw;
     text-decoration: none;
     cursor: pointer;
     position: relative;
@@ -154,7 +165,7 @@ body {
 }
 
 .header img {
-    width: 2vmax;
+    width: 1vmax;
 }
 
 
@@ -200,22 +211,34 @@ body {
 
 .main {
     font-size: 100%;
-    color:white;
+    /* color:white; */
 }
 
 .main-container {
+    color: rgb(175, 175, 175);
     margin-top: 15vmin;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 15%;
+    margin-right: 15%;
+    /* margin-left: 15vw; */
+    /* margin-right: 15vw; */
     margin-bottom: 12vh;
     text-align: center;
 }
 
+/* .container {
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: left;
+} */
+
 .main-header {
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    font-size: 6vmax;
+    /* font-family: "Noto Sans Mono", monospace; */
+    font-family: "Geologica", sans-serif;
+    font-size: 5vmax;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     /* text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6); */
     /* text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6); */
     transition: all 0.1s;
@@ -280,13 +303,15 @@ body {
 .info-box {
     margin: 0.5vw;
     padding: 1vw;
-    color: rgb(255, 255, 255);
+    /* color: rgb(200, 200, 200); */
     background-color: rgba(0, 0, 0, 0.2);
-    border-color: rgb(201, 201, 201);
-    border-radius: 0.5em;
+    /* border-color: rgb(201, 201, 201); */
+    border-color: rgb(120, 120, 120);
+    /* border-radius: 0.5em; */
+    border-radius: 0em;
     border-width: 0.15em;
     border-style: solid;
-    box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.2); */
     font-size: 2.4vmin;
 }
 
@@ -298,6 +323,7 @@ body {
     margin: 0 1em 0 1em;
     font-weight: bold;
     font-size: 1em;
+    color: rgb(200, 200, 200)
 }
 
 .info-subheader {
@@ -308,7 +334,7 @@ body {
 
 .info-contents {
     line-height: 1.5em;
-    color: rgba(210, 210, 210);
+    color: rgb(175, 175, 175);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -317,27 +343,39 @@ body {
 }
 
 .info-contents b {
-    color: white;
+    color: rgb(175, 175, 175);
 }
 
 
-.about-me {
+/* .about-me {
     text-align: left;
-    /* font-size: 2.7vmin; */
     font-size: 2.8vmin;
     margin: auto;
     margin-top: 0vh;
-    background-color: rgba( 0, 0 ,9, 0.3);
-    border-color: rgba(255, 255, 255, 0.8);
-    border-radius: 0.2em;
-    border-width: 0.1em;
-    border-style: solid;
     width: 42vw;
     padding: 2vw;
     padding-top: 0.4vw;
-    /* padding: 0.5vw; */
     height: auto;
+} */
+
+.about-me {
+    
+    text-align: left;
+    /* margin-left: 15%;
+    margin-right: 15%; */
+    /* border-style: solid; */
+    /* border-width: 2em; */
+    border-color: white;
+    /* border-radius: ; */
+    letter-spacing: 0.05em;
+    font-size: 3vmin;
 }
+
+.about-me h1 {
+    font-size: 3vmax;
+}
+
+
 
 /* ===== Projects ===== */
 

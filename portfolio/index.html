@@ -7,9 +7,14 @@
 <head>
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Matthew Jenson | Portfolio</title>
     <meta charset="UTF-8">
@@ -22,10 +27,17 @@
     
     <div class="header">
         <div class="header-list">
-            <a id="home-button" class="active" onclick="
+            <!-- <div
+                class="header-name" 
+                onclick="
+                    reveal('home', ['experience', 'projects'])
+                    makeActive('home-button', ['projects-button', 'experience-button'])">
+                Matthew Jenson
+            </div> -->
+            <a style="font-size: 4.3vmin;" id="home-button" class="active" onclick="
                 reveal('home', ['projects', 'experience']) 
                 makeActive('home-button', ['projects-button', 'experience-button'])">
-                <span>Home</span></a>
+                <span>Matthew Jenson</span></a>
             <a id="experience-button" onclick="
                 reveal('experience', ['projects', 'home'])
                 makeActive('experience-button', ['home-button', 'projects-button'])">
@@ -34,72 +46,44 @@
                 reveal('projects', ['experience', 'home'])
                 makeActive('projects-button', ['home-button', 'experience-button'])">
                 <span>Projects</span></a>
-            <div
-                class="header-name" 
-                onclick="
-                    reveal('home', ['experience', 'projects'])
-                    makeActive('home-button', ['projects-button', 'experience-button'])">
-                Matthew Jenson
-            </div>
+            
+            <a href="https://www.linkedin.com/in/matthew-b-jenson/" target="_blank">
+                <img src="../assets/images/linkedin-logo-tight.png">/in/matthew-b-jenson
+            </a>
+            <a href="https://github.com/mbjenson" target="_blank">
+                <img src="../assets/images/github-mark-white.png">/mbjenson
+            </a>
+            
+            <!-- <a href="https://www.linkedin.com/in/matthew-b-jenson/" target="_blank">
+                <img src="../assets/images/linkedin-logo-tight.png">/in/matthew-b-jenson
+            </a>
+            <a href="https://github.com/mbjenson" target="_blank">
+                <img src="../assets/images/github-mark-white.png">/mbjenson
+            </a> -->
+
         </div>
     </div>
     
     <div class="main css-selector">
         <div class="main-container">
             <div id="home">
-                <div class="main-header">
-                    <span>Matthew Jenson</span>
+                <div class="about-me">
+                    <h1>
+                        Hey, i'm Matthew
+                    </h1>
+                    I am a software engineer and graduate of the University of Minnesota, Twin Cities.
+                    <br>
+                    <br>
+                    Right now I am interning at HistoSonics inc. as a software engineer.
+                    <br>
+                    <br>
+                    I have worked on many projects and have experience with a wide variety of technologies
+                    and tech-stacks with many applications ranging from games and physics engines
+                    to web APIs and data processing pipelines that drive cutting edge astronomical research.
                 </div>
-
-                <div class="main-links">
-                    <a href="https://www.linkedin.com/in/matthew-b-jenson/" target="_blank">
-                        <img src="../assets/images/linkedin-logo.png">
-                    </a>
-                    <a href="https://github.com/mbjenson" target="_blank">
-                        <img src="../assets/images/github-mark-white.png">
-                    </a>
-                </div>
-                
-                <br>
-                <div class="about-me" style="letter-spacing:0.06em">
-                    <div class="section-header" style="margin:0.00em;  margin-bottom:0.3em; font-size:3.2vmax; text-align:left;">
-                        About Me
-                    </div>
-                    Hi, my name is Matthew. I am a software engineer and graduate of the University of Minnesota, Twin Cities.
-                    I am currently working as a software engineer intern at HistoSonics inc. I have worked with a wide
-                    variety of technologies and tech-stacks with applications that range from games and physics engines in my
-                    spare time, to web APIs and data processing pipelines that drive cutting edge
-                    astronomical research.
-
-                    <!-- Hi, my name is Matthew. I am an aspiring software developer and university student,
-                    currently in my fourth year of a BS in computer science
-                    at the University of Minnesota - Twin Cities. I work in the
-                    department of Physics and Astronomy as an
-                    undergraduate software development researcher under Prof. 
-                    Michael Coughlin.
-                    My work includes designing and developing highly optimized data-processing
-                    systems software, working with distributed computing, and back-end web API development. -->
-                </div>
-
-                <!-- <div class="section-links">
-                    <div class="section-link" onclick="
-                    reveal('experience', ['projects', 'home'])
-                    makeActive('experience-button', ['home-button', 'projects-button'])">
-                        Experience
-                    </div>
-                    <div class="section-link" onclick="
-                    reveal('projects', ['experience', 'home'])
-                    makeActive('projects-button', ['home-button', 'experience-button'])">
-                        Projects
-                    </div>
-                </div> -->
-                
             </div>
 
             <div id="projects" style="display:none">
-                <div class="section-header">
-                    Projects
-                </div>
                 <div class="project-box" style="background-image:url(../assets/videos/QuadtreeDarker.gif)">
                     <div class="project-header">
                         Quadtree Physics Simulation
@@ -190,13 +174,6 @@
             </div>
             
             <div id="experience" style="display:none">
-
-                <div class="section-header">
-                    Experience
-                </div>
-
-                
-
                 <div class="info-col">
 
                     <div class="info-box">
@@ -305,7 +282,7 @@
                 </div>
             </div>
             
-            <div class="info-box" style="min-width:fit-content; margin-top: 8em;">
+            <!-- <div class="info-box" style="min-width:fit-content; margin-top: 8em;">
                 
                 <div class="info-title" style="font-size: 1.3em; margin: 0.7em;">
                     Contact
@@ -316,7 +293,7 @@
                         *please email me here with any questions about myself or employment inquiries*
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
