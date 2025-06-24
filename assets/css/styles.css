@@ -25,21 +25,26 @@
 
 body {
     height: fit-content;
+    
     /* background-image:linear-gradient(to right, rgb(226, 121, 87), rgb(249, 226, 100)); */
-    /* background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(9, 9, 121) 0%, rgb(49, 189, 70) 100%);  */
+
+    /* background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9, 9, 121, 1) 0%, rgba(49, 189, 70, 1) 100%);  */
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(25, 25, 124) 0%, rgb(59, 147, 73) 100%); 
+
     /* background-image: linear-gradient(312deg, rgba(2,0,36,1) 0%, rgb(26, 26, 64) 0%, rgb(117, 37, 29) 100%);  */
     /* background-image: linear-gradient(312deg, rgb(19, 149, 86) 0%, rgb(41, 41, 132) 0%, rgb(117, 37, 29) 100%);  */
     /* background-image: linear-gradient(312deg, rgb(19, 149, 86), rgb(61, 61, 173), rgb(169, 51, 40));  */
     
     /* background-image: linear-gradient(312deg, rgb(1, 117, 102), rgb(37, 37, 146), rgb(130, 32, 23));  */
-    background-image: linear-gradient(312deg, rgb(130, 32, 23), rgb(1, 117, 102), rgb(37, 37, 146)); 
+    /* background-image: linear-gradient(312deg, rgb(130, 32, 23), rgb(1, 117, 102), rgb(37, 37, 146));  */
     
     
     /* background-size: 350vmax 350vmax; */
     background-size: 400vmax 400vmax;
     animation: MoveBG 35s ease infinite;
-    background-color: rgb(73, 73, 73);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: rgb(73, 73, 73); */
+    font-family: "Geologica", sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
 ::-webkit-scrollbar {
@@ -72,11 +77,11 @@ body {
 
 .header-name {
     color: rgb(222, 222, 222);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     /* text-shadow: 0.07em 0.07em 0px rgba(123, 123, 123, 0.6); */
     font-size: 4.3vmin;
     position: fixed;
-    font-weight: bold;
+    /* font-weight: bold; */
     top: 0;
     right: 0;
     margin-left: 1.5vw;
@@ -207,11 +212,12 @@ body {
 }
 
 .main-header {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-size: 6vmax;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6);
+    /* text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6); */
+    /* text-shadow: 0.07em 0.07em 0px rgba(0, 0, 0, 0.6); */
     transition: all 0.1s;
     margin-bottom: 0.2em;
     margin-top: 0.8em;
