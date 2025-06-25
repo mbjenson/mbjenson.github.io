@@ -23,8 +23,6 @@
 </head>
 
 <body>
-    
-    
     <div class="header">
         <div class="header-list">
             <!-- <div
@@ -34,7 +32,7 @@
                     makeActive('home-button', ['projects-button', 'experience-button'])">
                 Matthew Jenson
             </div> -->
-            <a style="font-size: 4.3vmin;" id="home-button" class="active" onclick="
+            <a style="font-size: 2em;" id="home-button" class="active" onclick="
                 reveal('home', ['projects', 'experience']) 
                 makeActive('home-button', ['projects-button', 'experience-button'])">
                 <span>Matthew Jenson</span></a>
@@ -67,20 +65,25 @@
     <div class="main css-selector">
         <div class="main-container">
             <div id="home">
-                <div class="about-me">
-                    <h1>
-                        Hey, i'm Matthew
-                    </h1>
-                    I am a software engineer and graduate of the University of Minnesota, Twin Cities.
-                    <br>
-                    <br>
-                    Right now I am interning at HistoSonics inc. as a software engineer.
-                    <br>
-                    <br>
-                    I have worked on many projects and have experience with a wide variety of technologies
-                    and tech-stacks with many applications ranging from games and physics engines
-                    to web APIs and data processing pipelines that drive cutting edge astronomical research.
+                <div class="about-me-container">
+                    <div class="about-me">
+                        <h1>
+                            Hey, i'm Matthew
+                        </h1>
+                        I am a software engineer and graduate of the University of Minnesota, Twin Cities with a bachelors of
+                        science in computer science.
+                        <br>
+                        <br>
+                        Right now I am interning as a software engineering at HistoSonics inc.
+                        <br>
+                        <br>
+                        I am experienced with a wide variety of technologies and tech-stacks.
+                        I have designed and developed software ranging from games and physics engines
+                        to web APIs and data processing pipelines that help drive cutting edge astronomical research.
+                    </div>
                 </div>
+
+                
             </div>
 
             <div id="projects" style="display:none">
@@ -174,6 +177,20 @@
             </div>
             
             <div id="experience" style="display:none">
+
+                <div class="experience-container">
+                    <div class="experience-box">
+                        <span>
+                            <div class="job-title">SOme title</div>
+                            sub header
+                        </span>
+                        <span>
+                            <div class="job-date">Some date</div>
+                        </span> 
+                    </div>
+                </div>
+                
+
                 <div class="info-col">
 
                     <div class="info-box">
