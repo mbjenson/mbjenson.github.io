@@ -25,13 +25,6 @@
 <body>
     <div class="header">
         <div class="header-list">
-            <!-- <div
-                class="header-name" 
-                onclick="
-                    reveal('home', ['experience', 'projects'])
-                    makeActive('home-button', ['projects-button', 'experience-button'])">
-                Matthew Jenson
-            </div> -->
             <a style="font-size: 2em;" id="home-button" class="active" onclick="
                 reveal('home', ['projects', 'experience']) 
                 makeActive('home-button', ['projects-button', 'experience-button'])">
@@ -45,19 +38,12 @@
                 makeActive('projects-button', ['home-button', 'experience-button'])">
                 <span>Projects</span></a>
             
+            <a href="https://github.com/mbjenson" target="_blank">
+                <img src="../assets/images/github-mark-white.png">/mbjenson
+            </a>
             <a href="https://www.linkedin.com/in/matthew-b-jenson/" target="_blank">
                 <img src="../assets/images/linkedin-logo-tight.png">/in/matthew-b-jenson
             </a>
-            <a href="https://github.com/mbjenson" target="_blank">
-                <img src="../assets/images/github-mark-white.png">/mbjenson
-            </a>
-            
-            <!-- <a href="https://www.linkedin.com/in/matthew-b-jenson/" target="_blank">
-                <img src="../assets/images/linkedin-logo-tight.png">/in/matthew-b-jenson
-            </a>
-            <a href="https://github.com/mbjenson" target="_blank">
-                <img src="../assets/images/github-mark-white.png">/mbjenson
-            </a> -->
 
         </div>
     </div>
@@ -67,9 +53,9 @@
             <div id="home">
                 <div class="about-me-container">
                     <div class="about-me">
-                        <h1>
-                            Hey, i'm Matthew
-                        </h1>
+                        <div class="about-me-header">
+                            Hey, I'm Matthew
+                        </div>
                         I am a software engineer and graduate of the University of Minnesota, Twin Cities with a bachelors of
                         science in computer science.
                         <br>
@@ -87,91 +73,150 @@
             </div>
 
             <div id="projects" style="display:none">
-                <div class="project-box" style="background-image:url(../assets/videos/QuadtreeDarker.gif)">
-                    <div class="project-header">
-                        Quadtree Physics Simulation
-                        <div style="float:right">
-                            <a href="https://github.com/mbjenson/quadtree-collision-detection" target="_blank">
-                                <img src="../assets/images/github-mark-white.png">
-                            </a>
+
+                <div class="projects-container">
+                    <div class="project" style="background-image:url(../assets/videos/QuadtreeDarker.gif);">
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-heading">
+                                    Quadtree Physics Simulation
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="https://github.com/mbjenson/quadtree-collision-detection" target="_blank">
+                                    <img src="../assets/images/github-mark-white.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-subheading">
+                                    C++, SFML, CMake
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <ul>
+                                    <li>An interactive physics engine that simulates realtime collisions, leveraging the quadtree data structure to greatly optimize computations</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+
+
+                    <div class="project" style="background-image:url(../assets/videos/CosmicFoxDarker.gif);">
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-heading">
+                                    Cosmic Fox
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="https://github.com/mbjenson/CosmicFox" target="_blank">
+                                    <img src="../assets/images/github-mark-white.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-subheading">
+                                    C++, SFML, CMake
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <ul>
+                                    <li>A 2d, retro-style game made from completely from scratch using C++</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-tech">
-                        C++, SFML, Git
-                    </div>
-                    <div class="project-info">
-                        <li>An interactive physics engine that simulates realtime collision physics</li>
-                        <li>Leverages the quadtree data structure to optimize physics by greatly reducing computational overhead</li>
-                    </div>
-                </div>
 
-                <div class="project-box" style="background-image:url(../assets/videos/CosmicFoxDarker.gif)">
-                    <div class="project-header">
-                        Cosmic Fox
-                        <div style="float:right">
-                            <a href="https://github.com/mbjenson/CosmicFox" target="_blank">
-                                <img src="../assets/images/github-mark-white.png">
-                            </a>
+                    <div class="project" style="background-image:url(../assets/images/ray-tracer-preview.jpg);">
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-heading">
+                                    Ray Tracer
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="https://github.com/mbjenson/ray-tracer" target="_blank">
+                                    <img src="../assets/images/github-mark-white.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-subheading">
+                                    C++
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <ul>
+                                    <li>3D ray tracing scene renderer made entirely from scratch with C++, capable of rendering complex and lifelike scenes with several lighting techniques</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-tech">
-                        C++, SFML, Git
-                    </div>
-                    <div class="project-info">
-                        <li>Top down 2d action game made from skratch with C++</li>
-                        <li>Rendered using the SFML graphics API</li>
-                        <li>Custom music, art, and sound design</li>
-                    </div>
-                </div>
 
-                <div class="project-box" style="background-image:url(../assets/images/ray-tracer-preview.jpg)">
-                    <div class="project-header">
-                        Ray Tracer
-                        <div style="float:right">
-                            <a href="https://github.com/mbjenson/ray-tracer" target="_blank">
-                                <img src="../assets/images/github-mark-white.png">
-                            </a>
+                    <div class="project">
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-heading">
+                                    Data-Driven Game Engine
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="https://github.com/mbjenson/data-driven-2d-engine" target="_blank">
+                                    <img src="../assets/images/github-mark-white.png">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-subheading">
+                                    C#, XNA/Monogame
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <ul>
+                                    <li>A 2D game engine built on the back of a custon entity component system</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="project-tech">
-                        C++
-                    </div>
-                    <div class="project-info">
-                        <li>3D ray tracing scene renderer made entirely with C++</li>
-                        <li>Uses several advanced lighting and rendering techniques to create lifelike and high resolution scenes</li>
-                    </div>
-                </div>
 
-                <div class="project-box">
-                    <div class="project-header">
-                        Data-Driven Game Engine
-                        <div style="float:right">
-                            <a href="https://github.com/mbjenson/data-driven-2d-engine" target="_blank">
-                                <img src="../assets/images/github-mark-white.png">
-                            </a>
+                    <div class="project">
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-heading">
+                                    2048 AI
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project-tech">
-                        C#, Git, Monogame/XNA
-                    </div>
-                    <div class="project-info">
-                        <li>Designed and developed a 2D game engine from the ground up using C# with the monogame framework</li>
-                        <li>Built on the back of a custom entity component system</li>
-                        <li>Includes rigidbody physics, lighting, tilemaps, and more build-in features</li>
-                    </div>
-                </div>
-
-                <div class="project-box">
-                    <div class="project-header">
-                        2048 AI
-                    </div>
-                    <div class="project-tech">
-                        Python, Pygame
-                    </div>
-                    <div class="project-info">
-                        <li>Robust and capable 2048 AI solver</li>
-                        <li>Achieves scores of over 15,000 and an average score of over 7,000 over 100 games</li>
-                        <li>Built on advanced concepts of state space search and heuristics</li>
+                        <div class="row">
+                            <div class="left">
+                                <div class="project-subheading">
+                                    Python, Pygame
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <ul>
+                                    <li>AI Solver made for the popular game '2048' using advanced principles of state space search</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -248,86 +293,6 @@
                             <li><b>University of Minnesota, Twin Cities</b><br>Bachelors of Science, Computer Science (May 2025)<br></li>
                         </ul>
                     </div>
-
-<!--                     
-                <div class="info-col">
-
-
-                    <div class="info-box">
-                        <div class="info-title">
-                            <h2>Languages</h2>
-                        </div>
-                        <div class="info-contents">
-                            <ul>
-                                <li>C++</li>
-                                <li>C#</li>
-                                <li>Rust</li>
-                                <li>Python</li>
-                                <li>C</li>
-                                <li>JavaScript</li>
-                                <li>Bash/Shell</li>
-                                <li>Java</li>
-                                <li>and more...</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="info-box">
-                        <div class="info-title">
-                            <h2>Involvement</h2>
-                        </div>
-                        <div class="info-contents">
-                            <ul>
-                                <li><b>Campus Outreach</b> (2021 - 2025)<br>Vice President</li>
-                                <li><b>App Developers Club</b> (2021 - 2023)</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    
-
-                    
-                </div>
-
-                <div class="info-col">
-                    <div class="info-box">
-                        <div class="info-title">
-                            <h2>Technologies</h2>
-                        </div>
-                        <div class="info-contents">
-                            <ul>
-                                <li><b>Databases:</b><br>MongoDB, SQL, MySQL</li>
-                                <li><b>WebDev:</b><br>Actix, JavaScript, REST, HTML / CSS, Node JS, Django</li>
-                                <li><b>Source Control:</b><br>Azure DevOps, Git, GitHub</li>
-                                <li><b>Distributed:</b><br>Redis</li>
-                                <li><b>Container:</b><br>Docker</li>
-                                <li><b>Game Dev:</b><br>OpenGL, Unreal Engine 5, XNA/Monogame, SDL2, SFML, Bevy, PyGame, Unity</li>
-                                <li><b>Build:</b><br>CMake, MakeFile</li>
-                                <li><b>Data Sci:</b><br>NumPy, Pandas</li>
-                                <li><b>OS:</b><br>Windows, Linux (Arch, Ubuntu)</li>
-                                <li><b>Workflows:</b><br>Agile, Scrum, Waterfall</li> -->
-                                <!-- <li><b>IDE / Editors:</b><br>VS Code, Visual Studio, VIM, Eclipse, Pycharm, Intellij</li> -->
-                                <!-- <li><i>and more...</i></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="info-box">
-                        <div class="info-title">
-                            <h2>Education</h2>
-                        </div>
-                        <div class="info-contents">
-                            <ul>
-                                <li><b>Bachelors of Science</b>
-                                    <br>- Computer Science (GPA: 3.5)
-                                    <br>- University Of Minnesota, Twin Cities
-                                    <br>- grad: May 2025
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             
             <!-- <div class="info-box" style="min-width:fit-content; margin-top: 8em;">
                 

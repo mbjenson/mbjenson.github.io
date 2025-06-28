@@ -1,4 +1,4 @@
-
+/* 
 .css-selector{
     -webkit-animation: MoveBG 0s ease infinite;
     -moz-animation: MoveBG 0s ease infinite;
@@ -21,7 +21,7 @@
     0%{background-position:15% 0%}
     50%{background-position:86% 100%}
     100%{background-position:15% 0%}
-}
+} */
 
 body {
     height: fit-content;
@@ -55,17 +55,24 @@ body {
     display: none;
 }
 
-/* ===== HEADER ===== */
-
 @media screen and (min-width: 601px) {
     .header {
         font-size: 1em;
     }
     .about-me-container {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
     .experience-header {
         font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project {
+        font-size: 0.5em;
+    }
+    .header {
+        font-size: 0.5em;
     }
 }
 
@@ -78,9 +85,14 @@ body {
     }
     .job-box {
         font-size: 0.5em;
-        margin-bottom: 2em;
     }
     .experience-header {
+        font-size: 0.5em;
+    }
+    .experience-box {
+        font-size: 0.5em;
+    }
+    .project {
         font-size: 0.5em;
     }
 }
@@ -348,10 +360,12 @@ body {
     /* font-size: 3vmin; */
 }
 
-.about-me h1 {
+.about-me-header {
     font-size: 2.3em;
-    /* font-size: 3vmax; */
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
+
 
 .experience-container {
     margin-left: 15%;
@@ -413,6 +427,54 @@ body {
 }
 
 /* ===== Projects ===== */
+
+.projects-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: center;
+}
+
+.project {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0.14em;
+    /* border-radius: 5px; */
+    /* border-color: rgba(255, 255, 255, 0.1); */
+    /* border-color: rgb(35, 35, 35); */
+    border-color: rgb(15, 15, 15);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 7.5em;
+    margin-bottom: 1.5em;
+    background-color: rgb(15, 15, 15);
+}
+
+.project-heading {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+.project-subheading {
+    font-weight: 300;
+    font-size: 0.85em;
+    font-style: italic;
+    margin-top: 0em;
+}
+
+.project a img {
+    width: 1.5em;
+}
+
+.project ul {
+    padding-left: 1em;
+    padding-top: 0em;
+    margin-top: 0em;
+    font-size: 1.0em;
+    font-weight: 500;
+}
+
+
 
 .project-box {
     text-align: left;
