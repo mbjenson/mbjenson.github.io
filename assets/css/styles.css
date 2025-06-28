@@ -64,6 +64,9 @@ body {
     .about-me-container {
         font-size: 1.3em;
     }
+    .experience-header {
+        font-size: 2em;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -72,6 +75,13 @@ body {
     }
     .about-me-container {
         font-size: 0.7em;
+    }
+    .job-box {
+        font-size: 0.5em;
+        margin-bottom: 2em;
+    }
+    .experience-header {
+        font-size: 0.5em;
     }
 }
 
@@ -266,33 +276,42 @@ body {
 } */
 
 .info-col {
-    max-width: 30vw;
-    min-width: 20vw;
+    /* max-width: 10em; */
+    /* max-width: 15em; */
+    /* width: 20em; */
+    /* max-width: 20em; */
+    /* min-width: 10em; */
+    
+    width: 20em;
+    /* width: fit-content; */
     display: inline-block;
     vertical-align: top;
     text-align: left;   
 }
 
 .info-box {
-    margin: 0.5vw;
-    padding: 1vw;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-color: rgb(120, 120, 120);
-    border-radius: 0em;
-    border-width: 0.15em;
+    vertical-align: top;
+    text-align: left;
+    /* margin: 0.5vw; */
+    /* padding: 1vw; */
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    /* border-color: rgb(120, 120, 120); */
+    /* border-radius: 0em; */
+    /* border-width: 0.15em; */
     border-style: solid;
-    font-size: 2.4vmin;
+    /* font-size: 2.4vmin; */
 }
 
 .info-box li {
     padding-right: 1em;
+    margin-left: 0.2em;
 }
 
 .info-title {
     margin: 0 1em 0 1em;
     font-weight: bold;
     font-size: 1em;
-    color: rgb(200, 200, 200)
+    /* color: rgb(200, 200, 200) */
 }
 
 .info-subheader {
@@ -340,15 +359,51 @@ body {
     justify-content: center;
 }
 
+.experience-header {
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
 .experience-box {
+    vertical-align: top;
+    text-align: left;
+}
+
+.experience-box ul {
+    padding-left: 1.5em;
+}
+
+.experience-box li {
+    margin-bottom: 0.2em;
+}
+
+.experience-box li b {
+    font-size: 1.3em;
+}
+
+.job-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10em;
-    width: 50em;
-    border-style: solid;
+    text-align: left;
+    /* padding: 1em; */
+    height: 4em;
+    /* border-style: solid; */
+    margin-bottom: 1.5em;
 }
 
+.job-box a {
+    font-size: 1.5em;
+    color: rgb(115, 128, 241);
+    text-decoration: none;
+}
+
+.job-date {
+    vertical-align: top;
+}
 
 /* ===== Projects ===== */
 
